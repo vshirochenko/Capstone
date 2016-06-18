@@ -1,0 +1,12 @@
+.item-img {
+	width: 250px;
+	height: 250px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.title {
+	color: goldenrod;
+	text-align: center;
+	font-size: -webkit-xxx-large;
+}

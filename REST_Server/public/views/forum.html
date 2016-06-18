@@ -1,0 +1,37 @@
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+               <ul class="breadcrumb">
+                   <li><a href="index.html">Home</a></li>
+                   <li class="active">Forum</li>
+               </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <button type="button" class="btn btn-primary btn-sm" ng-click="addNewComment()">Add new comment</button>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+               <h2 class="title">Forum</h2>
+               <hr>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-12">
+                <div  class="well" ng-repeat="comment in comments">
+                    <blockquote>
+                        <p>{{comment.comment}}</p>
+                        <footer><span style="background: aquamarine;">{{comment.postedBy}},</span>
+                        <cite title="Source Title">{{comment.date}}</cite></footer>
+                    </blockquote> 
+
+                    <!-- <div>
+                        <span><b>{{comment.postedBy}}</b></span>
+                        <span style="font-family: cursive; margin-left: 10px; font-size: 8px;">{{comment.date}}</span>
+                    </div>
+                    <div>
+                        <p>{{comment.comment}}</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,48 @@
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+               <ul class="breadcrumb">
+                   <!-- <li><a href="index.html">Home</a></li>
+                   <li><a href="index.html#/catalog">Catalog</a></li> -->
+                   <li><a ui-sref="app">Home</a></li>
+                   <li><a ui-sref="app.catalog">Catalog</a></li>
+                   <li class="active">Item Details</li>
+               </ul>
+            </div>
+            <div class="col-xs-12">
+               <h3>Detail information</h3>
+               <hr>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xs-5 col-sm-5" style="margin-bottom: 20px;">
+            	<img src="images/{{item.imageSrc}}" class="img-details">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-sm-offset-1">
+            	<ul style="list-style-type: none;">
+            		<li>
+                        <b class="itemdetail-title">TITLE</b>
+                        <br>
+            			<span class="info">{{item.title}}</span>
+            		</li>
+            		<li>
+            			<b class="itemdetail-title">PRICE</b>
+                        <br>
+                        <span class="info">{{item.price}} $</span>
+            		</li>
+            		<li>
+            			<b class="itemdetail-title">DISCOUNT</b>
+                        <br>
+                        <span class="info">{{item.discount}} %</span>
+            		</li>
+            		<li>
+            			<b class="itemdetail-title">DESCRIPTION</b>
+                        <br>
+                        <span class="info">{{item.description}}</span>
+            		</li>
+            	</ul>
+            </div>
+        </div>
+
+    </div>

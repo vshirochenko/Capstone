@@ -1,0 +1,42 @@
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+               <ul class="breadcrumb">
+                   <li><a href="index.html">Home</a></li>
+                   <li class="active">Catalog</li>
+               </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <button type="button" class="btn btn-primary btn-sm" ng-click="addNewItem()">Add new item</button>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+               <h2 class="title">Catalog</h2>
+               <hr>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-12">
+                <!-- <div ng-repeat="item in items" ng-if="$index % 3 == 0" class="row" style="display: block;">
+                    <div ng-if="$index < items.length" class="col-sm-4"><img src="images/{{items[$index].imageSrc}}" class="item-img"></div>
+                    <div ng-if="$index < items.length">{{items[$index].title}}</div>
+
+                    <div ng-if="$index + 1 < items.length" class="col-sm-4"><img src="images/{{items[$index + 1].imageSrc}}" class="item-img"></div>
+                    <div ng-if="$index + 1 < items.length">{{items[$index + 1].title}}</div>
+
+                    <div ng-if="$index + 2 < items.length" class="col-sm-4"><img src="images/{{items[$index + 2].imageSrc}}" class="item-img"></div>
+                    <div ng-if="$index + 2 < items.length">{{items[$index + 2].title}}</div>
+                </div> -->
+                <div class="row" style="display: block;">
+                    <ul style="list-style: none;">
+                        <li ng-repeat="item in items" style="display: inline; float: left;">
+                            <span><a ui-sref="app.itemdetails({id: item._id})">
+                            <img src="images/{{item.imageSrc}}" class="item-img"></a></span>
+                            <span style="display: block; text-align: center; font-size: 25px; font-weight: bold;">{{item.title}}</span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>

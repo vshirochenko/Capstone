@@ -1,0 +1,14 @@
+ul.itemdetail {
+	list-style-type: none;
+	background: aliceblue;
+}
+
+b.itemdetail-title {
+	font-size: 30px;
+}
+
+span.info {
+	font-size: 20px;
+	color: brown;
+	font-style: italic;
+}
